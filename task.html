@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Order Page Details</h1>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="my-accounts-tab" data-toggle="pill" href="#my-accounts" role="tab" aria-controls="my-accounts" aria-selected="true"><i class="fa fa-user-circle-o" aria-hidden="true"></i> My Profile</a>
+                <a class="nav-link" id="my-wallet-tab" data-toggle="pill" href="#my-wallet" role="tab" aria-controls="my-wallet" aria-selected="false"><i class="fa fa-money" aria-hidden="true"></i> My Wallet</a>
+                <a class="nav-link" id="my-orders-tab" data-toggle="pill" href="#my-orders" role="tab" aria-controls="my-orders" aria-selected="false"><i class="fa fa-shopping-cart" aria-hidden="true"></i> My Orders</a>
+                <a class="nav-link" id="my-wishlist-tab" data-toggle="pill" href="#my-wishlist" role="tab" aria-controls="my-wishlist" aria-selected="false"><i class="fa fa-heart" aria-hidden="true"></i> My Wishlist</a>
+                <a class="nav-link" id="my-subscription-tab" data-toggle="pill" href="#my-subscription" role="tab" aria-controls="my-subscription" aria-selected="false"><i class="fa fa-superpowers" aria-hidden="true"></i> My Subscription</a>
+                <a class="nav-link" id="my-qna-tab" data-toggle="pill" href="#my-qna" role="tab" aria-controls="my-qna" aria-selected="false"><i class="fa fa-question-circle-o" aria-hidden="true"></i> Q & A</a>
+                <a class="nav-link" id="my-saved-payment-tab" data-toggle="pill" href="#my-saved-payment" role="tab" aria-controls="my-saved-payment" aria-selected="false"><i class="fa fa-address-card-o" aria-hidden="true"></i> My Saved Payment</a>
+                <a class="nav-link" id="my-log-out-tab" data-toggle="pill" href="#my-log-out" role="tab" aria-controls="my-log-out" aria-selected="false"><i class="fa fa-power-off" aria-hidden="true"></i> Log Out</a>
+            </div>
+        </div>  
+        <div class="col-sm-9"> 
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="my-accounts" role="tabpanel" aria-labelledby="my-accounts-tab">
+                    <div class="card">
+                        <h5 class="card-header"><i class="fa fa-arrow-left" aria-hidden="true"></i> My Profile</h5>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                      <label for="inputFirstName">First Name</label>
+                                      <input type="text" class="form-control" id="inputFirstName" placeholder="John" value="John">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                      <label for="inputLastName">Last Name</label>
+                                      <input type="text" class="form-control" id="inputLastName" placeholder="Doe" value="Doe">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" value="johndoe@gmail.com">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password" value="johndoe@1234">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputAddress">Address</label>
+                                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" value="2211 N First Street">
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputAddress2">Address 2</label>
+                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" value="Building 17">
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control" id="inputCity" value="San Jose">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label for="inputState">State</label>
+                                    <input type="text" class="form-control" id="inputState" value="California">
+                                  </div>
+                                  <div class="form-group col-md-2">
+                                    <label for="inputZip">Zip</label>
+                                    <input type="text" class="form-control" id="inputZip" value="95131">
+                                  </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Update My Details</button>
+                              </form>
+                        </div>
+                      </div>
+                </div>
+                <div class="tab-pane fade" id="my-wallet" role="tabpanel" aria-labelledby="my-wallet-tab">
+                    <div class="card">
+                        <h5 class="card-header"><i class="fa fa-arrow-left" aria-hidden="true"></i> My Wallet</h5>
+                        <div class="card-body">
+                          There's no money in your wallet <i class="fa fa-frown-o" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                </div>
+                <div class="tab-pane fade" id="my-orders" role="tabpanel" aria-labelledby="my-orders-tab">
+                    <div class="card">
+                        <h5 class="card-header"><i class="fa fa-arrow-left" aria-hidden="true"></i> My Orders</h5>
+                        <div class="card-body">
+                            <div class="col-lg-12 p-3 cardlist">
+								<div class="col-lg-12">
+									<div class="row">
+										<div class="col-lg-8">
+											<div class="row">
+												<div class="col-4 col-lg-3 col-xl-2">
+													<div class="row">
+														<a href="" class="w-100">
+															<img src="http://placehold.it/100x100" class="mx-auto d-block mb-1 addcartimg">
+														</a>
+													</div>
+												</div>
+												<div class="col-8 col-lg-9 col-xl-10">
+													<div class="d-block text-truncate mb-1">
+														<a href="" class="cartproname">Pure Refined Sugar</a>
+													</div>
+													<div class="seller d-block">
+														<span>Seller: </span>
+														<span>SELL010</span>
+													</div>
+													<div class="cartviewprice d-block">
+														<span class="amt">Rs.6,258</span>
+														<span class="oldamt">Rs.7,365</span>
+														<span class="disamt">28% off</span>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-4 col-lg-3 col-xl-2 p-0 qty">
+													<div class="input-group">
+														<div class="input-group-prepend">
+															<button type="button" class="btn btn-sm btn-qty"><i class="fa fa-minus"></i></button>
+														</div>
+														<input type="text" class="form-control form-control-sm text-center" id="" aria-describedby="" value="8" required>
+														<div class="input-group-append">
+															<button type="button" class="btn btn-sm btn-qty"><i class="fa fa-plus"></i></button>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-3 col-5"><a href="" class="addcardrmv">Remove</a></div>
+											</div>
+										</div>
+										<div class="col-lg-3 ml-lg-auto align-self-start mt-2 mt-lg-0">
+											<div class="row">
+												<div class="prostatus">
+													<span class="del-time">Delivered <span>2-3 Business Days</span></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                            <div class="col-lg-12 p-3 cardlist">
+								<div class="col-lg-12">
+									<div class="row">
+										<div class="col-lg-8">
+											<div class="row">
+												<div class="col-4 col-lg-3 col-xl-2">
+													<div class="row">
+														<a href="" class="w-100">
+															<img src="http://placehold.it/100x100" class="mx-auto d-block mb-1 addcartimg">
+														</a>
+													</div>
+												</div>
+												<div class="col-8 col-lg-9 col-xl-10">
+													<div class="d-block text-truncate mb-1">
+														<a href="" class="cartproname">Ghee</a>
+													</div>
+													<div class="seller d-block">
+														<span>Seller: </span>
+														<span>SELL010</span>
+													</div>
+													<div class="cartviewprice d-block">
+														<span class="amt">Rs.2,567</span>
+														<span class="oldamt">Rs.2,700</span>
+														<span class="disamt">15% off</span>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-4 col-lg-3 col-xl-2 p-0 qty">
+													<div class="input-group">
+														<div class="input-group-prepend">
+															<button type="button" class="btn btn-sm btn-qty"><i class="fa fa-minus"></i></button>
+														</div>
+														<input type="text" class="form-control form-control-sm text-center" id="" aria-describedby="" value="8" required>
+														<div class="input-group-append">
+															<button type="button" class="btn btn-sm btn-qty"><i class="fa fa-plus"></i></button>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-3 col-5"><a href="" class="addcardrmv">Remove</a></div>
+											</div>
+										</div>
+										<div class="col-lg-3 ml-lg-auto align-self-start mt-2 mt-lg-0">
+											<div class="row">
+												<div class="prostatus">
+													<span class="del-time">Delivered <span>3 Business Days</span></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12 p-3 cardlist">
+								<div class="col-lg-12">
+									<div class="row">
+										<div class="col-lg-8">
+											<div class="row">
+												<div class="col-4 col-lg-3 col-xl-2">
+													<div class="row">
+														<a href="" class="w-100">
+															<img src="http://placehold.it/100x100" class="mx-auto d-block mb-1 addcartimg">
+														</a>
+													</div>
+												</div>
+												<div class="col-8 col-lg-9 col-xl-10">
+													<div class="d-block text-truncate mb-1">
+														<a href="" class="cartproname">Veg Noodles</a>
+													</div>
+													<div class="seller d-block">
+														<span>Seller: </span>
+														<span>SELL010</span>
+													</div>
+													<div class="cartviewprice d-block">
+														<span class="amt">Rs.4,354</span>
+														<span class="oldamt">Rs.4,698</span>
+														<span class="disamt">35% off</span>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-4 col-lg-3 col-xl-2 p-0 qty">
+													<div class="input-group">
+														<div class="input-group-prepend">
+															<button type="button" class="btn btn-sm btn-qty"><i class="fa fa-minus"></i></button>
+														</div>
+														<input type="text" class="form-control form-control-sm text-center" id="" aria-describedby="" value="8" required>
+														<div class="input-group-append">
+															<button type="button" class="btn btn-sm btn-qty"><i class="fa fa-plus"></i></button>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-3 col-5"><a href="" class="addcardrmv">Remove</a></div>
+											</div>
+										</div>
+										<div class="col-lg-3 ml-lg-auto align-self-start mt-2 mt-lg-0">
+											<div class="row">
+												<div class="prostatus">
+													<span class="del-time">Delivered <span>8 Business Days</span></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12 p-3 cardlist">
+								<div class="col-lg-12">
+									<div class="row">
+										<div class="col-lg-8">
+											<div class="row">
+												<div class="col-4 col-lg-3 col-xl-2">
+													<div class="row">
+														<a href="" class="w-100">
+															<img src="http://placehold.it/100x100" class="mx-auto d-block mb-1 addcartimg">
+														</a>
+													</div>
+												</div>
+												<div class="col-8 col-lg-9 col-xl-10">
+													<div class="d-block text-truncate mb-1">
+														<a href="" class="cartproname">Sunflower Oil</a>
+													</div>
+													<div class="seller d-block">
+														<span>Seller: </span>
+														<span>SELL010</span>
+													</div>
+													<div class="cartviewprice d-block">
+														<span class="amt">Rs.13,650</span>
+														<span class="oldamt">Rs.14,000</span>
+														<span class="disamt">20% off</span>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-4 col-lg-3 col-xl-2 p-0 qty">
+													<div class="input-group">
+														<div class="input-group-prepend">
+															<button type="button" class="btn btn-sm btn-qty"><i class="fa fa-minus"></i></button>
+														</div>
+														<input type="text" class="form-control form-control-sm text-center" id="" aria-describedby="" value="8" required>
+														<div class="input-group-append">
+															<button type="button" class="btn btn-sm btn-qty"><i class="fa fa-plus"></i></button>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-3 col-5"><a href="" class="addcardrmv">Remove</a></div>
+											</div>
+										</div>
+										<div class="col-lg-3 ml-lg-auto align-self-start mt-2 mt-lg-0">
+											<div class="row">
+												<div class="prostatus">
+													<span class="del-time">Delivered <span>6-10 Business Days</span></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                            <div class="card-footer">
+                                <a href="" class="btn btn-add-con">Continue Shopping</a>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="tab-pane fade" id="my-wishlist" role="tabpanel" aria-labelledby="my-wishlist-tab">
+                    <div class="card">
+                        <h5 class="card-header"><i class="fa fa-arrow-left" aria-hidden="true"></i> My Wishlist</h5>
+                        <div class="card-body">
+                            <div class="table-wishlist">
+                                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th width="45%">Product Name</th>
+                                            <th width="15%">Unit Price</th>
+                                            <th width="15%">Stock Status</th>
+                                            <th width="15%"></th>
+                                            <th width="10%"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td width="45%">
+                                                <div class="display-flex align-center">
+                                                    <div class="img-product">
+                                                        <img src="https://www.91-img.com/pictures/laptops/asus/asus-x552cl-sx019d-core-i3-3rd-gen-4-gb-500-gb-dos-1-gb-61721-large-1.jpg" alt="" class="mCS_img_loaded">
+                                                    </div>
+                                                    <div class="name-product">
+                                                        Apple iPad Mini
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td width="15%" class="price">₹110.00</td>
+                                            <td width="15%"><span class="in-stock-box">In Stock</span></td>
+                                            <td width="15%"><button class="round-black-btn small-btn">Add to Cart</button></td>
+                                            <td width="10%" class="text-center"><a href="#" class="trash-icon"><i class="far fa-trash-alt"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="45%">
+                                                <div class="display-flex align-center">
+                                                    <div class="img-product">
+                                                        <img src="https://www.91-img.com/pictures/laptops/asus/asus-x552cl-sx019d-core-i3-3rd-gen-4-gb-500-gb-dos-1-gb-61721-large-1.jpg" alt="" class="mCS_img_loaded">
+                                                    </div>
+                                                    <div class="name-product">
+                                                        Apple iPad Mini
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td width="15%" class="price">₹110.00</td>
+                                            <td width="15%"><span class="in-stock-box">In Stock</span></td>
+                                            <td width="15%"><button class="round-black-btn small-btn">Add to Cart</button></td>
+                                            <td width="10%" class="text-center"><a href="#" class="trash-icon"><i class="far fa-trash-alt"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="45%">
+                                                <div class="display-flex align-center">
+                                                    <div class="img-product">
+                                                        <img src="https://www.91-img.com/pictures/laptops/asus/asus-x552cl-sx019d-core-i3-3rd-gen-4-gb-500-gb-dos-1-gb-61721-large-1.jpg" alt="" class="mCS_img_loaded">
+                                                    </div>
+                                                    <div class="name-product">
+                                                        Apple iPad Mini
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td width="15%" class="price">₹110.00</td>
+                                            <td width="15%"><span class="in-stock-box">In Stock</span></td>
+                                            <td width="15%"><button class="round-black-btn small-btn">Add to Cart</button></td>
+                                            <td width="10%" class="text-center"><a href="#" class="trash-icon"><i class="far fa-trash-alt"></i></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="tab-pane fade" id="my-subscription" role="tabpanel" aria-labelledby="my-subscription-tab">
+                    <div class="card">
+                        <h5 class="card-header"><i class="fa fa-arrow-left" aria-hidden="true"></i> My Subscription</h5>
+                        <div class="card-body">
+                          Not any active subscription <i class="fa fa-frown-o" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                </div>
+                <div class="tab-pane fade" id="my-qna" role="tabpanel" aria-labelledby="my-qna-tab">
+                    <div class="card">
+                        <h5 class="card-header"><i class="fa fa-arrow-left" aria-hidden="true"></i> My Q & A</h5>
+                        <div class="card-body">
+                            <table class="table table-striped">
+                                <thead>
+                                  <tr>
+                                      <th>Questions and Answers</th>
+                                      <th>Q & A Dates</th>        
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                     <td>Washington DC<br/><a href="" target="_blank">Gaylord National Hotel Convention Center</a><br/><i class="fa fa-map-marker"></i> 201 Waterfront Street<br/>National Harbor, MD 20745</td>
+                                     <td>July 7 - 9, 2015</td>
+                                   </tr>
+                                   <tr class="active">    
+                                     <td><strong>NSTP Annual Federal Tax Refresher Course</strong><br/><a href="" target="_blank">Gaylord National Hotel Convention Center</a><br/><i class="fa fa-map-marker"></i> 201 Waterfront Street<br/>National Harbor, MD 20745</td>
+                                     <td><strong>AFTR Date & Registration</strong><br/>July 10, 2015<br/><br/><a class="btn btn-hot btn-block " href="" target="_blank"><i class="fa fa-hand-o-right"></i> Register Here</a></td>
+                                   </tr>           
+                                   <!--Denbver-->
+                                   <tr>
+                                     <td>Denver , CO <br/><a href=""target="_blank">Hyatt Regency Denver at Colorado Convention Center</a><br/><i class="fa fa-map-marker"></i> 650 15th Street<br/>Denver, CO 80202</td>
+                                     <td>July 28 - 30, 2015</td>
+                                   </tr>
+                                  <tr class="active">       
+                                     <td><strong>NSTP Annual Federal Tax Refresher Course</strong> <br/><a href=""target="_blank">Embassy Suites Denver</a><br/><i class="fa fa-map-marker"></i> 1420 Stout St<br/>Denver, CO 80202</td>
+                                     <td><strong>AFTR Date & Registration</strong><br/>July 31, 2015<br/><br/><a class="btn btn-hot btn-block " href="" target="_blank"><i class="fa fa-hand-o-right"></i> Register Here</a></td>
+                                   </tr>
+                                   <!--Denver-->
+                                   <tr>
+                                     <td>San Diego, CA <br/><a href="" target="_blank">San Diego Town & Country</a><br/><i class="fa fa-map-marker"></i> 500 Hotel Circle North <br/>San Diego, CA , 92108</td>
+                                     <td>August 11 - 13, 2015</td>
+                                   </tr>
+                                   <tr class="active">
+                                     <td><strong>NSTP Annual Federal Tax Refresher Course</strong> <br/><a href=""target="_blank">San Diego Town & Country</a><br/><i class="fa fa-map-marker"></i> 500 Hotel Circle North <br/>San Diego, CA , 92108</td>
+                                     <td><strong>AFTR Date & Registration</strong><br/>August 14, 2015<br/><br/><a class="btn btn-hot btn-block " href="" target="_blank"><i class="fa fa-hand-o-right"></i> Register Here</a></td>
+                                   </tr>
+                                   <!--washington-->
+                                   <tr>
+                                     <td>Atlanta, GA <br/><a href="" target="_blank">Atlanta Marriott Marquis</a><br/><i class="fa fa-map-marker"></i> 265 Peachtree Center Avenue <br/>Atlanta, GA , 30303</td>
+                                     <td>August 25 - 27, 2015</td>
+                                   </tr>
+                                   <tr class="active">   
+                                     <td><strong>NSTP Annual Federal Tax Refresher Course</strong><br/><a href=""target="_blank">Atlanta Marriott Marquis</a><br/><i class="fa fa-map-marker"></i> 265 Peachtree Center Avenue  <br/>Atlanta, GA , 30303</td>
+                                     <td><strong>AFTR Date & Registration</strong><br/>August 28, 2015<br/><br/><a class="btn btn-hot btn-block " href="" target="_blank"><i class="fa fa-hand-o-right"></i> Register Here</a></td>
+                                   </tr>
+                                   <!--washington-->
+                                   <tr>
+                                     <td>Orlando, FL<br/><a href=""target="_blank">Hyatt Regency Orlando</a><br/><i class="fa fa-map-marker"></i> 9801 International Drive <br/>Orlando, FL , 32819</td>
+                                     <td>September 1 - 3, 2015</td>
+                                   </tr>
+                                   <tr class="active">
+                                     <td><strong>NSTP Annual Federal Tax Refresher Course</strong><br/><a href=""target="_blank">Hyatt Regency Orlando</a><br/><i class="fa fa-map-marker"></i> 9801 International Drive <br/>Orlando, FL , 32819</td>
+                                     <td><strong>AFTR Date & Registration</strong><br/>September 4, 2015<br/><br/><a class="btn btn-hot btn-block " href="" target="_blank"><i class="fa fa-hand-o-right"></i> Register Here</a></td>
+                                   </tr>
+                                   <!--washington-->
+                                 </tbody>
+                              </table>
+                        </div>
+                      </div>
+                </div>
+                <div class="tab-pane fade" id="my-saved-payment" role="tabpanel" aria-labelledby="my-saved-payment-tab">
+                    <div class="card">
+                        <h5 class="card-header"><i class="fa fa-arrow-left" aria-hidden="true"></i> My Saved Payment</h5>
+                        <div class="card-body">
+                            <div class="well col-xs-10 col-sm-10 col-md-6 col-xs-offset-1 col-sm-offset-1 col-md-offset-3">
+                                <div class="row">
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <address>
+                                            <strong>Elf Cafe</strong>
+                                            <br>
+                                            2135 Sunset Blvd
+                                            <br>
+                                            Los Angeles, CA 90026
+                                            <br>
+                                            <abbr title="Phone">P:</abbr> (213) 484-6829
+                                        </address>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6 text-right">
+                                        <p>
+                                            <em>Date: 1st November, 2013</em>
+                                        </p>
+                                        <p>
+                                            <em>Receipt #: 34522677W</em>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="text-center">
+                                        <h1>Receipt</h1>
+                                    </div>
+                                    </span>
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Product</th>
+                                                <th>#</th>
+                                                <th class="text-center">Price</th>
+                                                <th class="text-center">Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="col-md-9"><em>Baked Rodopa Sheep Feta</em></h4></td>
+                                                <td class="col-md-1" style="text-align: center"> 2 </td>
+                                                <td class="col-md-1 text-center">₹13</td>
+                                                <td class="col-md-1 text-center">₹26</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-md-9"><em>Lebanese Cabbage Salad</em></h4></td>
+                                                <td class="col-md-1" style="text-align: center"> 1 </td>
+                                                <td class="col-md-1 text-center">₹8</td>
+                                                <td class="col-md-1 text-center">₹8</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-md-9"><em>Baked Tart with Thyme and Garlic</em></h4></td>
+                                                <td class="col-md-1" style="text-align: center"> 3 </td>
+                                                <td class="col-md-1 text-center">₹16</td>
+                                                <td class="col-md-1 text-center">₹48</td>
+                                            </tr>
+                                            <tr>
+                                                <td>   </td>
+                                                <td>   </td>
+                                                <td class="text-right">
+                                                <p>
+                                                    <strong>Subtotal: </strong>
+                                                </p>
+                                                <p>
+                                                    <strong>Tax: </strong>
+                                                </p></td>
+                                                <td class="text-center">
+                                                <p>
+                                                    <strong>₹6.94</strong>
+                                                </p>
+                                                <p>
+                                                    <strong>₹6.94</strong>
+                                                </p></td>
+                                            </tr>
+                                            <tr>
+                                                <td>   </td>
+                                                <td>   </td>
+                                                <td class="text-right"><h4><strong>Total: </strong></h4></td>
+                                                <td class="text-center text-danger"><h4><strong>₹31.53</strong></h4></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </td>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="tab-pane fade" id="my-log-out" role="tabpanel" aria-labelledby="my-log-out-tab">
+                    <div class="card">
+                        <h5 class="card-header"><i class="fa fa-arrow-left" aria-hidden="true"></i> Log Out</h5>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-danger">Click me to Log Out</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+  </div>     
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
